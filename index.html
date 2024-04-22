@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <title>Viatris</title>
+        <style type="text/css">
+            /*Css Reset Start*/
+            body,
+            #body_style {
+                width: 100% !important;
+                font-family: Arial;
+                color: #ffffff;
+                line-height: 1;
+            }
+
+            .ExternalClass {
+                width: 100%;
+            }
+
+            .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass table,
+            .ExternalClass div {
+                line-height: 100%;
+            }
+
+            body {
+                margin: 0 !important;
+            }
+
+            body,
+            img,
+            div,
+            p,
+            ul,
+            li,
+            span,
+            strong,
+            a {
+                margin: 0;
+                padding: 0;
+            }
+
+            table {
+                border-spacing: 0;
+            }
+
+            table td,
+            table th {
+                border-collapse: collapse;
+            }
+
+            div {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            a {
+                text-decoration: none;
+                outline: none;
+            }
+
+            a[href^="tel"],
+            a[href^="sms"] {
+                text-decoration: none;
+                color: inherit !important;
+            }
+
+            img {
+                display: block;
+                border: none;
+                outline: none;
+                text-decoration: none;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            .appleLinks {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .appleLinks a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .light {
+                color: #29266d;
+                font-weight: 700;
+            }
+
+            .button {
+                background: #f1cb14;
+                font-size: 14px;
+                font-family: Helvetica, arial, sans-serif;
+                text-align: center;
+                color: #29266d;
+                font-weight: 600;
+                border-radius: 6px;
+                height: 36px;
+                width: 200px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .button-two {
+                background: #f1cb14;
+                font-size: 14px;
+                font-family: Helvetica, arial, sans-serif;
+                text-align: center;
+                color: #29266d;
+                font-weight: 600;
+                border-radius: 6px;
+                height: 36px;
+                width: 201px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            a.link {
+                color: #29266d;
+            }
+
+            a.link:focus {
+                color: #29266d;
+            }
+
+            /*Css Reset End*/
+            /*media query Start*/
+            @media only screen and (max-width: 599px) {
+                td[class="Wrapper"] table[class="Container"] {
+                    width: 100% !important;
+                }
+
+                td[class="Wrapper"] .hero_image img {
+                    width: 100%;
+                    height: auto !important;
+                }
+
+                .hideSpace {
+                    display: none !important;
+                }
+
+                .blockSpace {
+                    width: 100% !important;
+                    height: auto !important;
+                    display: block !important;
+                }
+
+                *[class="gmail-fix"] {
+                    display: none !important;
+                }
+
+                td[class="Wrapper"] .col-100 {
+                    width: 100% !important;
+                    height: auto !important;
+                    display: block !important;
+                    float: none !important;
+                }
+
+                td[class="Wrapper"] .col-50 {
+                    width: 50% !important;
+                    height: auto !important;
+                    float: none !important;
+                }
+
+                td[class="Wrapper"] .fragment_image img {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+
+                .col-1001 {
+                    margin: 0 auto !important;
+                }
+
+                .col-1002 {
+                    padding-left: 0px !important;
+                }
+            }
+
+            @media only screen and (max-width: 479px) {
+                .setPadding {
+                    padding: 0px 10px !important;
+                }
+
+                .col-1001 {
+                    width: 90% !important;
+                    height: auto !important;
+                    padding-left: 0px !important;
+                    margin: 0 auto !important;
+                }
+
+                .blockSpace1 {
+                    width: 100% !important;
+                    height: 25px !important;
+                    display: block !important;
+                }
+
+                td[class="Wrapper"] .frg_image img {
+                    width: 100%;
+                    height: auto !important;
+                }
+
+                td[class="Wrapper"] .col-50 {
+                    width: 100% !important;
+                    height: auto !important;
+                    display: block !important;
+                }
+
+                img[class="rezize"] {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+
+                .stack-column,
+                .stack-column-center {
+                    display: block !important;
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    direction: ltr !important;
+                }
+
+                .stack-column-center {
+                    text-align: center !important;
+                }
+            }
+
+            li::marker {
+                color: #0a0a0a;
+            }
+
+            /*media query End*/
+        </style>
+    </head>
+
+<body
+    style="font-family:Arial; font-size: 12.5px; font-weight: normal; background:#fff;color: #544F40; margin: 0; padding:0; width:100% !important;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td class="Wrapper" align="center" valign="top" style="">
+                    <!-- Main Wrapper -->
+                    <table class="Container" style="background: #fff; border: 1px solid #9b8e7a;" width="600" border="0"
+                        cellspacing="0" cellpadding="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+
+                                                <img src="./ark/h1.png" alt="">
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="40" style="font-size:1px;background:  #ffffff; line-height:1px;">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%; " cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td style="color: #636366;padding: 0px 60px; background: #ffffff;">
+                                                <p
+                                                    style=" color:#636366; font-size: 19px;line-height: 24px;  font-family:Arial; margin: 0px 0px 20px 0px; ">
+                                                    Hi [name],
+                                                </p>
+                                                <p
+                                                    style=" color:#636366; font-size: 19px;line-height: 24px;  font-family:Arial; margin: 0px 0px 20px 0px; ">
+
+                                                    <b>Did you know? </b>
+                                                </p>
+                                                <p
+                                                    style=" color:#636366; font-size: 19px;line-height: 24px;  font-family:Arial; margin: 0px 0px 10px 0px; ">
+
+                                                    Empathy and innovation are reshaping brand
+                                                    connections in the digital world. From staying relevant
+                                                    to engaging the right audience, the need is to be
+                                                    human in the digital world.
+                                                </p>
+
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" style="font-size:1px;background:  #ffffff; line-height:1px;">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+
+                                                <img src="./ark/b1.png" alt="">
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="40" style="font-size:1px;background:  #ffffff; line-height:1px;">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%; " cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td style="color: #636366;padding: 0px 60px; background: #ffffff;">
+                                                <p
+                                                    style=" color:#636366; font-size: 19px;line-height: 24px;  font-family:Arial; margin: 0px 0px 20px 0px; ">
+                                                    Using a more human touch helps your brand really
+                                                    connect and stand out to people.
+
+
+                                                </p>
+                                                <p
+                                                    style=" color:#636366; font-size: 19px;line-height: 24px;  font-family:Arial; margin: 0px 0px 20px 0px; ">
+
+                                                    It is all about the ‘real’ experience in the digital age!
+
+                                                </p>
+                                                <p
+                                                    style=" color:#636366; font-size: 24px;line-height: 30px;  font-family:Arial; margin: 20px 0px 0px 0px; ">
+                                                    <b>Our<span style="color:#be33a5 ;"> successful digital </span>
+                                                        campaigns
+                                                        for the clients:</b>
+
+                                                </p>
+
+
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20" style="font-size:1px;background:  #ffffff; line-height:1px;">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%; " cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+                                                <a href="https://theskepper.com/case-study/dalsy-social-media-campaign"
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <img src="./ark/b2.png" alt="">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="https://theskepper.com/case-study/emmvee-digital-marketing-campaign"
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <img src="./ark/b3.png" alt="">
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" style="font-size:1px;background:  #ffffff; line-height:1px;">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%; " cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td style="color: #636366;padding: 0px 60px; background: #ffffff;">
+
+                                                <p
+                                                    style=" color:#636366; font-size: 24px;line-height: 30px;  font-family:Arial; margin: 0px 0px 20px 0px; ">
+                                                    <b>Our services</b>
+
+                                                </p>
+
+
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+
+                                                <img src="./ark/b4.png" alt="">
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" style="font-size:1px;background:  #ffffff; line-height:1px;">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%; " cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+
+                                            <td style="color: #636366;padding: 10px 0px 0px 105px; background: #ffffff; "
+                                                valign="middle" align="center">
+                                                <img src="./ark/b5.png" alt=""> <br>
+                                                <p
+                                                    style=" color:#2f2f2f; font-size: 26px;line-height: 30px;  font-family:Arial; margin: 30px 0px 30px 0px; text-align: center; ">
+                                                    <b>Humanise your brand, today!</b>
+                                                </p>
+                                                <img src="./ark/b7.png" alt=""> <br> <br>
+                                                <p
+                                                    style=" color:#2f2f2f; font-size: 16px;line-height: 24px;  font-family:Arial; margin: 30px 0px 30px 0px; text-align: center; ">
+                                                    <a href="#">Download Our Digital Marketing Guide Now!</a>
+                                                </p>
+                                            </td>
+
+                                            <td style="color: #636366;padding: 10px 0px 0px 10px; background: #ffffff;"
+                                                align="right">
+                                                <img src="./ark/b6.png" alt="">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td height="40" style="font-size:1px;background:  #ffffff; line-height:1px;">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%; " cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td style="color: #636366; background: #ffffff;" align="center">
+                                                <img src="./ark/b8.png" alt="">
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="20" style="font-size:1px;background:  #ffffff; line-height:1px;">&nbsp;
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td style="background-color:#ffffff; padding: 20px 0px 0px 50px;">
+                                    <table style="width: 25%; border: 0px;" cellpadding="0" cellspacing="0">
+
+                                        <tr>
+
+
+
+                                            <td style="width: 5%;" align="left">
+
+                                                <a href="https://cloud.email.viatrisconnect.com/preference-center-ro"
+                                                    target="_blank"
+                                                    style="color: #ffffff; text-decoration: underline;"><img
+                                                        src="./ark/s1.png" alt=""></a>
+
+
+
+                                            </td>
+                                            <td style="width: 5%;" align="left">
+                                                <a href="https://www.viatris.com/ro-RO/lm/countryhome/Terms-of-Use"
+                                                    target="_blank"
+                                                    style="color: #ffffff; text-decoration: underline;"><img
+                                                        src="./ark/s2.png" alt="">
+                                                </a>
+
+                                            </td>
+                                            <td style="width: 5%;" align="left">
+
+                                                <a href="https://www.viatris.com/ro-RO/lm/countryhome/Privacy-Policy"
+                                                    target="_blank"
+                                                    style="color: #ffffff; text-decoration: underline;"><img
+                                                        src="./ark/s3.png" alt=""></a>
+                                            </td>
+                                            <td style="width: 5%;" align="left">
+                                                <a href="https://www.viatris.com/ro-RO/lm/countryhome/Terms-of-Use"
+                                                    target="_blank"
+                                                    style="color: #ffffff; text-decoration: underline;"><img
+                                                        src="./ark/s4.png" alt="">
+                                                </a>
+
+                                            </td>
+                                            <td style="width: 5%;" align="left">
+                                                <a href="https://www.viatris.com/ro-RO/lm/countryhome/Terms-of-Use"
+                                                    target="_blank"
+                                                    style="color: #ffffff; text-decoration: underline;"><img
+                                                        src="./ark/s5.png" alt="">
+                                                </a>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color:#ffffff;">
+                                    <table style="width: 100%; border: 0px;" cellpadding="0" cellspacing="0">
+
+                                        <tr>
+
+
+
+                                            <td style="color:#343434;padding: 5px 75px 30px 50px  ; " colspan="2">
+                                                <p
+                                                    style="font-size: 13px;line-height: 26px;font-family:Arial; margin: 0px 0px;">
+
+                                                    <a href="">www.theskepper.com</a>
+
+                                                </p>
+                                                <p
+                                                    style="font-size: 13px;line-height: 16px;font-family: Arial; margin: 0px 0px;">
+                                                    Copyright © 2018 | All Rights Reserved.
+
+                                                </p>
+
+                                            </td>
+                                            <td align="right" valign="top" style="padding: 0px 50px 20px 0px;">
+                                                <img src="./ark/b9.png" alt="" align="center" valign="bottom">
+
+                                            </td>
+
+
+                                        </tr>
+
+
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%; " cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+                                                <img src="./ark/b10.png" alt="">
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
